@@ -1,0 +1,104 @@
+<html>
+<script language="javascript">
+
+    /* js to native */
+    function toNative()
+       {
+       <!--alert("111");-->
+            var str='{"name":"appInfo", "params":"test", "callback":"toJS"}';
+            demo.invoke(str);
+       }
+
+    function toNativePending()
+       {
+            var str='{"name":"pending", "params":"test", "callback":"toJSPending"}';
+            demo.invoke(str);
+       }
+
+    /* native to js */
+        function toJS(x) {
+            document.getElementById("image2").src="logo2.jpg";
+            document.getElementById('content1').innerText='No Pending CallBack';
+            document.getElementById('content2').innerText=x;
+        }
+
+        function toJSPending(x) {
+            document.getElementById("image3").src="logo4.jpg";
+            document.getElementById('content3').innerText='Pending CallBack';
+            document.getElementById('content4').innerText=x;
+        }
+
+    /* clear */
+        function clear() {
+        <!--alert(111);-->
+            document.getElementById('content1').innerText="";
+            document.getElementById('content2').innerText="";
+            document.getElementById('content3').innerText="";
+            document.getElementById('content4').innerText="";
+        }
+
+
+</script>
+<body>
+<!-- js -> native -->
+<!-- the 'demo' is as the same as the second param of addJavascriptInterface(new Tiny(this, this), "demo"); -->
+<!--<a onClick="window.demo.invoke('{&#34;name&#34;: &#34;zhangsan&#34;, &#34;age&#34;: 18, &#34;se&#34;: &#34;male&#34;}')">-->
+<!--<div style="width:80px;-->
+<!--margin:0px auto;-->
+<!--padding:10px;-->
+<!--text-align:center;-->
+<!--border:2px solid #202020;">-->
+<!--<img id="image1" src="logo1.jpg"/><br>-->
+<!--Click me!-->
+<!--</div>-->
+<!--</a>-->
+<br>
+<br>
+<a onClick="javascript:return toNative();">
+    <div style="width:200px;
+                margin:0px auto;
+                padding:10px;
+                text-align:center;
+                border:2px solid #202020;">
+        <img id="image2" src="logo1.jpg"/><br>
+        Click me!
+    </div>
+    <br>
+    <div id="content1">
+    </div>
+    <br>
+    <div id="content2">
+    </div>
+</a>
+<br>
+<br>
+<a onClick="javascript:return toNativePending();">
+    <div style="width:200px;
+                margin:0px auto;
+                padding:10px;
+                text-align:center;
+                border:2px solid #202020;">
+        <img id="image3" src="logo3.jpg"/><br>
+        Click me!
+    </div>
+    <br>
+    <div id="content3">
+    </div>
+    <br>
+    <div id="content4">
+    </div>
+</a>
+<br>
+<br>
+<a href="javascript:clear();">
+    <div style="width:200px;
+                margin:0px auto;
+                padding:10px;
+                text-align:center;
+                border:2px solid #202020;">
+        <img id="image5" src="logo5.jpg"/><br>
+        Click me to clear!
+    </div>
+</a>
+</body>
+</html>
