@@ -1,4 +1,4 @@
-package com.androidwind.tinywebview.common;
+package com.androidwind.webview.common;
 
 import com.alibaba.fastjson.JSONObject;
 

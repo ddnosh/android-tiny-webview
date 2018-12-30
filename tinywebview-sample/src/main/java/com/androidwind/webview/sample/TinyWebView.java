@@ -11,11 +11,11 @@ import android.util.Log;
 
 import com.alibaba.fastjson.JSONObject;
 import com.androidwind.task.TinyTaskExecutor;
-import com.androidwind.tinywebview.BaseWebView;
-import com.androidwind.tinywebview.common.JsApiHandler;
-import com.androidwind.tinywebview.common.JsApiRegisterFactory;
-import com.androidwind.tinywebview.common.JsInterface;
-import com.androidwind.tinywebview.common.LoadJsCallback;
+import com.androidwind.webview.BaseWebView;
+import com.androidwind.webview.common.JsApiHandler;
+import com.androidwind.webview.common.JsApiRegisterFactory;
+import com.androidwind.webview.common.JsInterface;
+import com.androidwind.webview.common.LoadJsCallback;
 import com.androidwind.webview.sample.handler.AppInfoHandler;
 import com.androidwind.webview.sample.handler.PendingHandler;
 import com.androidwind.webview.sample.jsinterface.Tiny;

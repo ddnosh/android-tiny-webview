@@ -1,4 +1,4 @@
-package com.androidwind.tinywebview.util;
+package com.androidwind.webview.util;
 
 import android.content.Context;
 import android.net.Uri;

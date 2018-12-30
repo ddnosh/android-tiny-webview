@@ -1,4 +1,4 @@
-package com.androidwind.tinywebview.common;
+package com.androidwind.webview.common;
 
 import android.app.Activity;
 import android.os.Looper;

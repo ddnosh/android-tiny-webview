@@ -1,9 +1,9 @@
 package com.androidwind.webview.sample.handler;
 
 import com.alibaba.fastjson.JSONObject;
-import com.androidwind.tinywebview.common.BaseJsApiHandler;
-import com.androidwind.tinywebview.common.JsRequest;
-import com.androidwind.tinywebview.common.JsResponse;
+import com.androidwind.webview.common.BaseJsApiHandler;
+import com.androidwind.webview.common.JsRequest;
+import com.androidwind.webview.common.JsResponse;
 
 /**
  * @author ddnosh

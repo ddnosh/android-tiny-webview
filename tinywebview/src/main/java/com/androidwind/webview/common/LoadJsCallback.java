@@ -1,4 +1,4 @@
-package com.androidwind.tinywebview.common;
+package com.androidwind.webview.common;
 
 import android.content.Context;
 import android.webkit.WebView;

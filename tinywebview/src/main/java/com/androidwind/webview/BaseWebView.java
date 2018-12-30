@@ -1,4 +1,4 @@
-package com.androidwind.tinywebview;
+package com.androidwind.webview;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
@@ -26,7 +26,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.androidwind.tinywebview.util.WebViewUtil;
+import com.androidwind.webview.util.WebViewUtil;
 
 import java.io.File;
 import java.io.IOException;

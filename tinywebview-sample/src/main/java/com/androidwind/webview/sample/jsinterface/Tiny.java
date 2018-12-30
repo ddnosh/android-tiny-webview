@@ -7,7 +7,7 @@ import android.webkit.WebView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.androidwind.tinywebview.common.JsInterface;
+import com.androidwind.webview.common.JsInterface;
 
 import java.lang.ref.WeakReference;
 
