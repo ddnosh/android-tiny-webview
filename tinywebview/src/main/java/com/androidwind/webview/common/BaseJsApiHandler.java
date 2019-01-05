@@ -9,7 +9,7 @@ import android.util.Log;
 import android.webkit.WebView;
 
 import com.alibaba.fastjson.JSON;
-import com.androidwind.task.Task;
+import com.androidwind.task.AdvancedTask;
 import com.androidwind.task.TinyTaskExecutor;
 
 import java.util.ArrayList;
@@ -95,7 +95,7 @@ public abstract class BaseJsApiHandler<T> implements JsApiHandler {
         request.setPending(isPending);
         request.setParams(params);
         request.setJsCallback(jsCallback);
-        request.setTask(new Task() {
+        request.setTask(new AdvancedTask() {
             @Override
             public Object doInBackground() {
                 handelInBackground(request);

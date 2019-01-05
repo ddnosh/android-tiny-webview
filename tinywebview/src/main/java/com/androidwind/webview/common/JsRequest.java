@@ -3,7 +3,7 @@ package com.androidwind.webview.common;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.androidwind.task.Task;
+import com.androidwind.task.AdvancedTask;
 
 /**
  * @author ddnosh
@@ -18,7 +18,7 @@ public class JsRequest<T> {
     @Nullable
     private JsResponse<T> mJsResponse;
     @Nullable
-    private Task mTask;
+    private AdvancedTask mTask;
     @Nullable
     private boolean isPending;
 
@@ -50,11 +50,11 @@ public class JsRequest<T> {
     }
 
     @Nullable
-    public Task getTask() {
+    public AdvancedTask getTask() {
         return mTask;
     }
 
-    public void setTask(@Nullable Task mTask) {
+    public void setTask(@Nullable AdvancedTask mTask) {
         this.mTask = mTask;
     }
 
